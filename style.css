@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#html {
+  display: none
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* Adjust column sizes as needed */
+  gap: 10px;
+  /* Space between columns */
+  width: 100%;
+  /* Full width of the container */
+  height: 100vh;
+  /* Adjust the height as needed, e.g., full viewport height */
+}
+
+#article-outline {
+  background-color: #f0f0f0;
+  /* Light grey background for visibility */
+  padding: 20px;
+  /* Padding around the text */
+}
+
+#article-section {
+  background-color: #ffffff;
+  outline: 1px solid #ccc;
+  /* White background for the content area */
+  padding: 20px;
+  overflow: auto;
+  /* Adds scrollbars if the content overflows */
+}
+
+#article-outline>div {
+  background-color: olive;
+  margin: 1em 0;
+  padding: 0.5em;
+}
