@@ -37,14 +37,38 @@ html {
   /* Adds scrollbars if the content overflows */
 }
 
-#article-outline>a {
+#article-outline a {
   display: block;
   background-color: olive;
   margin: 1em 0;
   padding: 0.5em;
+  text-decoration: none;
 }
 
-#article-outline>a:link {background-color:#808000}
-#article-outline>a:visited {background-color:#804040}
-#article-outline>a:hover {background-color:#804040}
-#article-outline>a:focus {background-color:#804040}
+#article-outline a:link {
+  background-color: #808000
+}
+
+#article-outline a:visited {
+  background-color: #804040
+}
+
+#article-outline a:hover {
+  background-color: #804040
+}
+
+#article-outline a:focus {
+  background-color: #804040
+}
+
+#logo {
+  width: 30%;
+}
+
+#article-section p {
+  color: black;
+}
+
+#article-section li {
+  color: black;
+}
