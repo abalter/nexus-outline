@@ -19,7 +19,7 @@ function fillOutline(html_string) {
     const title = section.querySelector('h1');
     if (title) {
       // Create a new div that will contain the title and act as a clickable element
-      const titleDiv = document.createElement('div');
+      const titleDiv = document.createElement('a');
       titleDiv.textContent = title.innerHTML; // Set the text of the div to the title text
       titleDiv.style.cursor = 'pointer'; // Make it appear clickable
 
@@ -33,6 +33,8 @@ function fillOutline(html_string) {
       outlineDiv.appendChild(titleDiv);
     }
   });
+
+  outlineDiv.childNodes[0].click()
 
 }
 
