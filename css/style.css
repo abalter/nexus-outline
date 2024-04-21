@@ -17,6 +17,15 @@ html {
   /* Adjust the height as needed, e.g., full viewport height */
 }
 
+/* Ensure no other conflicting styles for body and .grid-container */
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  /* font-family: Arial, sans-serif; */
+  /* Set the desired font */
+}
+
+
 #article-outline {
   background-color: #f0f0f0;
   /* Light grey background for visibility */
