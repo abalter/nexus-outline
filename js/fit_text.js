@@ -31,4 +31,4 @@ function adjustFontSizeToVw(selector, vw) {
 }
 
 // Usage: adjust the font size of the tagline to take up 40% of the viewport width
-adjustFontSizeToVw('#tagline', 40);
+// adjustFontSizeToVw('#tagline', 40);

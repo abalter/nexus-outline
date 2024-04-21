@@ -25,7 +25,7 @@ header {
 #tagline {
   grid-column: 1 / 2;
   /* spans first column */
-  /* font-size: calc(10px + (2vw / (1 + 0.1 * var(--char-count)))); /* Adjusts font size responsively */
+  /* font-size: calc(15px + (15vw / (var(--char-count)))); /* Adjusts font size responsively */
   */ margin: 10px 0;
   /* adds vertical spacing */
 }
@@ -99,16 +99,4 @@ body {
   gap: 10px;
   width: 100%;
   height: 100vh;
-}
-
-.merriweather-bold {
-  font-family: 'Merriweather', serif;
-  /* Example font */
-  font-weight: bold;
-}
-
-.lato-regular {
-  font-family: 'Lato', sans-serif;
-  /* Example font */
-  font-weight: normal;
 }

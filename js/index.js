@@ -1,4 +1,4 @@
-adjustFontSizeToVw("#tagline", 2 / (2 + 3))
+adjustFontSizeToVw('#tagline', 38);
 
 const text_processor = MML.getInstance();
 
