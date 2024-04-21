@@ -1,3 +1,5 @@
+adjustFontSizeToVw("#tagline", 2 / (2 + 3))
+
 const text_processor = MML.getInstance();
 
 fetch('articles/front_page.mml')

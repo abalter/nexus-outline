@@ -5,10 +5,6 @@ html {
   margin: 0 auto;
 }
 
-#html {
-  display: none
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 3fr;
