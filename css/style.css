@@ -13,7 +13,7 @@ html {
   /* Space between columns */
   width: 100%;
   /* Full width of the container */
-  height: 100vh;
+  /* height: 100vh; */
   /* Adjust the height as needed, e.g., full viewport height */
 }
 
@@ -72,5 +72,17 @@ body {
 }
 
 #article-section li {
+  line-height: 1.5em;
   color: black;
+  /* padding: 0.5em 0 0 0; */
+}
+
+#article-section li:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+#article-section ul, ol {
+  margin: 2em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
