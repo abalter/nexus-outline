@@ -1,26 +1,30 @@
-nav ul {
-  list-style-type: none;
-  margin: 0;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;   /* Align items to the bottom */
+  padding: 10px;
+  overflow: visible;       /* Ensures nothing is cut off */
+}
+
+nav > ul {
+  list-style: none;
   padding: 0;
-  overflow: hidden;
+  margin: 0;
+}
+
+nav > ul:first-child {
+  margin-right: 20px;      /* Ensures space between logo and menu items */
+}
+
+nav > ul > li {
   display: inline;
-  /* background-color: #333; */
 }
 
-nav  li {
-  display: inline;
-  float: right;
+nav > ul > li:not(:first-child) {
+  margin-left: 20px;       /* Space between menu items */
 }
 
-nav  li a {
-  display: block;
-  /* color: white; */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-nav  li a:hover {
-  background-color: #111;
+#logo {
+  height: 15vw;            /* Maintain aspect ratio */
+  width: auto;            /* Set width and let height auto-adjust */
 }
