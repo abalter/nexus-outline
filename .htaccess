@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Check if the HTTP_HOST is exactly 'aagu.org'
+RewriteCond %{HTTP_HOST} ^aagu\.org$ [NC]
+
+# Redirect all traffic to the under-construction page
+RewriteRule ^(.*)$ http://aagu.org/under-construction.html [R=302,L]
+
+# End of .htaccess file
+
