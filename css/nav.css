@@ -1,71 +1,63 @@
 /* Base styles for layout */
 header {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  /* Aligns with .grid-container columns */
-  align-items: end;
-  /* Align items to the end (bottom) of the container */
-  gap: 10px;
+  grid-template-columns: 1fr 2fr 3fr; /* Logo takes 1 fraction, tagline 2, nav 3 */
+  align-items: end; /* Aligns everything to the bottom */
+  gap: 10px; /* Adjust the gap to your preference */
   padding: 10px;
-  width: 100%;
 }
 
 #logo-container {
-  grid-column: 1 / 2;
-  /* Spans first column */
-  text-align: left;
+  grid-column: 1 / 2; /* Logo spans the first column */
+  display: flex;
+  align-items: end; /* Align the logo to the bottom of the container */
+  justify-content: start; /* Align the logo to the left of the container */
 }
 
 #logo {
-  width: 100%;
-  /* Makes the logo responsive within the container */
-  max-width: 180px;
-  /* Maximum size */
+  max-width: 100%; /* Adjust if necessary */
   height: auto;
 }
 
 #tagline {
-  grid-column: 1 / 2;
-  /* Spans first column */
-  font-size: calc(15px + (15vw / var(--char-count)));
-  /* Adjusts font size responsively */
-  margin: 0;
-  /* Adjust vertical spacing if necessary */
-  align-self: end;
-  /* Aligns tagline to the end within its grid area */
+  grid-column: 2 / 3; /* Tagline takes up the second column */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
 }
 
 #tagline-and-nav {
-  grid-column: 1 / -1;
-  /* Spans both columns */
+  grid-column: 2 / 4; /* Tagline and nav container spans second and third columns */
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  /* Reflects the .grid-container structure */
-  gap: 10px;
+  grid-template-columns: 2fr 3fr; /* Aligns with the structure */
+  height: 100%;
 }
 
 nav {
-  grid-column: 2 / 3;
-  /* Spans second column */
-  align-self: end;
-  /* Aligns nav to the end within its grid area */
+  grid-column: 2 / 3; /* Navigation spans the third column */
+  display: flex;
+  justify-content: flex-end; /* Aligns nav items to the right */
+  align-items: end; /* Aligns nav items to the bottom */
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   list-style: none;
-  margin: 0;
-  /* Adjust as needed */
+  width: 100%; /* Make sure the nav list takes up the full width of the nav container */
+}
+
+nav li {
+  margin: 0 10px; /* Spacing between nav items */
 }
 
 nav li a {
   text-decoration: none;
   color: black;
-  font-size: calc(10px + 1vw);
-  /* Adjusts font size responsively */
+  /* Add other styles for your links here */
 }
+
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 800px) {

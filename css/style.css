@@ -78,10 +78,11 @@ body {
 }
 
 #article-section li:not(:last-child) {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-#article-section ul, ol {
+#article-section ul,
+ol {
   margin: 2em;
   margin-block-start: 1em;
   margin-block-end: 1em;
